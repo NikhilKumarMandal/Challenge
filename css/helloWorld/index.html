@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #1f2937;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid black;
+            padding: 10px 50px;
+            height: 50px;
+            background-color: #1f2937;
+            color: #ffff;
+        }
+        .nav-link ul{
+            display: flex;
+            gap: 55px;
+            list-style-type: none;
+        }
+
+        .btn-1{
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+            margin-right:10px ;
+            cursor: pointer;
+            background: chocolate;
+            color:aliceblue
+        }
+
+        .btn-1:hover{
+            background: green;
+        }
+
+        .btn-2:hover{
+            background: green;
+        }
+
+        .btn-2{
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            background: chocolate;
+            color: aliceblue;
+        }
+
+        .hero{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 40px 80px;
+        }
+        
+        .hero div{
+            width: 50%;
+            margin-right:20px;
+        }
+
+        .hero div h1{
+            color: antiquewhite;
+            font-size: 40px;
+            padding-bottom:12px;
+        }
+
+        .hero div p{
+            font-size: 20px;
+            color: #9b9b9b;
+            padding-bottom: 12px;
+        }
+
+        .hero div img{
+            object-fit: cover;
+            border-radius: 10px;
+            height: 400px;
+            width: 100%;
+            box-shadow: 0 0 10px wheat;
+        }
+        .logo-text{
+            text-align: center;
+            margin: 30px;
+            font-size: 45px;
+            color: aliceblue;
+        }
+
+        .logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 10%;
+
+            padding: 20px 10px;
+        }
+        
+        .logo div img{
+            width: 200px;
+            border-radius: 5px;
+            object-fit: contain;
+        }
+
+        .three-card{
+            display: flex;
+        }
+
+        .three-card img{
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div>
+            <p>MyLogo</p>
+        </div>
+        <div class="nav-link">
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="btn">
+            <button class="btn-1">Singup</button>
+            <button class="btn-2">Login</button>
+        </div>
+    </nav>
+    <section class="hero">
+        <div >
+            <h1>Hero Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nesciunt odit voluptas nostrum? Accusantium omnis natus cumque ab? Ducimus perspiciatis asperiores odit itaque quas voluptatem ullam accusamus dolorem, commodi necessitatibus.</p>
+            <button class="btn-1">Sign up</button>
+        </div>
+        <div >
+            <img src="https://images.pexels.com/photos/516927/pexels-photo-516927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </div>
+    </section>
+
+    <h2 class="logo-text">Our Client</h2>
+
+    <section class="logo">
+        <div>
+            <img src="https://images.pexels.com/photos/170809/pexels-photo-170809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </div>
+        <div>
+            <img src="https://images.pexels.com/photos/208474/pexels-photo-208474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </div>
+         <div>
+            <img src="https://images.pexels.com/photos/170809/pexels-photo-170809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </div>
+        <div>
+            <img src="https://images.pexels.com/photos/208474/pexels-photo-208474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </div>
+                <div>
+            <img src="https://images.pexels.com/photos/170809/pexels-photo-170809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </div>
+    </section>
+
+    <section class="three-card">
+        <div class="card">
+            <img src="https://images.pexels.com/photos/2681319/pexels-photo-2681319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, numquam placeat hic quis itaque repellat ea quo non officia quos excepturi ad, fugit eligendi! Omnis alias eius labore velit soluta?</p>
+        </div>
+            <div class="card">
+            <img src="https://images.pexels.com/photos/942317/pexels-photo-942317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, numquam placeat hic quis itaque repellat ea quo non officia quos excepturi ad, fugit eligendi! Omnis alias eius labore velit soluta?</p>
+        </div>
+                <div class="card">
+            <img src="https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, numquam placeat hic quis itaque repellat ea quo non officia quos excepturi ad, fugit eligendi! Omnis alias eius labore velit soluta?</p>
+        </div>
+    </section>
+</body>
+</html>
