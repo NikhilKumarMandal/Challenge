@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <title>Chai Aur Fitness</title>
+    <!-- <link rel="stylesheet" href="challenge.css" /> -->
+    <style>
+      /* Challenge CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar styles */
+.navbar {
+  /* Add styles for navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 6%;
+  background: #333333;
+}
+
+.logo {
+  /* Add styles for the logo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #ffff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo img {
+  /* Add styles for logo image */
+  border-radius: 50%;
+}
+
+.nav-links a {
+  /* Add styles for nav links */
+  text-decoration: none;
+  color: #ffff;
+  padding: 15px;
+}
+
+.nav-links a:hover {
+  /* Add hover styles for nav links */
+  color: #ff7902;
+}
+
+/* Hero section styles */
+.hero {
+  /* Add styles for hero section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 91vh;
+  background:  linear-gradient(rgba(0, 0, 0, 0.800),rgba(0, 0, 0, 0.8)) ,url('./assets/chaigym.png') no-repeat center center/cover;
+  text-align: center;
+  flex-direction: column;
+  color: #ffff;
+}
+
+.hero-content {
+  /* Add styles for hero content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hero-content h1 {
+  /* Add styles for hero heading */
+  font-size: 40px;
+}
+
+.hero-content p {
+  /* Add styles for hero paragraph */
+  font-size: 15px;
+}
+
+.cta-button {
+  /* Add styles for CTA button */
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px 28px;
+  border-radius: 4px;
+  border: none;
+  background: #ff7902;
+}
+
+.cta-button:hover {
+  /* Add hover styles for CTA button */
+  background: #e06a00;
+}
+
+/* Features section styles */
+.features {
+  /* Add styles for features section */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  background: #010101;
+  opacity: 0.9;
+  gap: 100px;
+  padding: 50px 200px;
+  border-radius: 25px;
+
+}
+
+.feature {
+  /* Add styles for each feature block */
+  border: 2px solid #ff7902;
+  padding: 20px 15px;
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;  
+}
+
+.feature h3 {
+  /* Add styles for feature heading */
+  color: #ff7902;
+  font-size:17px;
+}
+
+.feature p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          src="./assets/chaicodelogo.png"
+          alt="ChaiCode Logo"
+          height="50px"
+          width="50px"
+        />
+        Chai Aur Fitness
+      </div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <main class="hero">
+      <div class="hero-content">
+        <h1>Transform Your Body</h1>
+        <p>Join the fitness revolution with Chai Aur Fitness</p>
+        <button class="cta-button">Start Free Trial</button>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <img src="./assets/handshake.svg" height="50" width="50" />
+          <h3>Expert Trainers</h3>
+          <p>Learn from certified professionals</p>
+        </div>
+        <div class="feature">
+          <img src="./assets/dumbbell.svg" height="50" width="50" />
+          <h3>Modern Equipment</h3>
+          <p>State-of-the-art facilities</p>
+        </div>
+        <div class="feature">
+          <img src="./assets/calendar-clock.svg" height="50" width="50" />
+          <h3>Flexible Timing</h3>
+          <p>Open 24/7 for your convenience</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
