@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <title>ChaiPatti - Premium Tea Store</title>
+    <link rel="stylesheet" href="challenge.css">
+    <style>
+      /* Challenge CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.header {
+  /* Define header styles here */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 0 70px;
+}
+
+.logo {
+  /* Define logo styles here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #ffff;
+  font-weight: bold;
+  font-size: 18px;
+  color: #8b4513;
+  padding: 5px 0;
+}
+
+.logo img {
+  /* Define image styles within the logo here */
+  border-radius: 50%;
+  border: 2px solid #8b4513;
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+}
+
+.nav-menu a {
+  /* Define navigation link styles here */
+  padding: 12px;
+  text-decoration: none;
+  color: #64350f;
+}
+
+.nav-menu a:hover {
+  /* Define hover styles for navigation links here */
+  color: #e76509 ;
+}
+
+.hero {
+  /* Define hero section styles here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 75vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/chaipatti.png") no-repeat center center/cover;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  /* Define styles for h1 in hero-text here */
+  font-size: 45px;
+  color: #fff;
+}
+
+.hero-text p {
+  /* Define styles for paragraph in hero-text here */
+  font-size: 15px;
+  color: #ffff;
+}
+
+.shop-button {
+  /* Define shop button styles here */
+  margin-top: 20px;
+  padding: 8px 26px;
+  border-radius: 25px;
+  border: none;
+  background: #8b4513;
+  color: #fff;
+}
+
+.shop-button:hover {
+  /* Define hover styles for shop button here */
+  background: #e76509 ;
+}
+
+.tea-collection {
+  /* Define tea collection section styles here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 65px
+}
+
+.tea-collection h2 {
+  /* Define styles for h2 in tea collection here */
+  font-size: 30px;
+  color: #8b4513;
+}
+
+.tea-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 50px;
+  max-width: 900px;
+  margin: 40px;
+}
+
+.tea-card {
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tea-card h3 {
+  /* Define styles for tea card headings here */
+  color: #8b4513;
+  font-size: 15px;
+}
+
+.tea-card p {
+  /* Define styles for tea card paragraph text here */
+  padding: 10px;
+  font-size: 14px;
+}
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img
+          src="./assets/chaicodelogo.png"
+          alt="ChaiCode Logo"
+          height="50px"
+          width="50px"
+        />
+        ChaiPatti
+      </div>
+      <nav class="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#teas">Our Teas</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Experience the Perfect Cup</h1>
+        <p>Handcrafted teas from the finest gardens of India</p>
+        <button class="shop-button">Shop Now</button>
+      </div>
+    </section>
+
+    <section class="tea-collection">
+      <h2>Our Premium Collection</h2>
+      <div class="tea-cards">
+        <div class="tea-card">
+          <img src="./assets/tea.svg" height="50" width="50" />
+          <h3>Darjeeling Tea</h3>
+          <p>
+            Known as the 'Champagne of Teas,' grown in the hills of Darjeeling.
+          </p>
+        </div>
+        <div class="tea-card">
+          <img src="./assets/tea-leaf.svg" height="50" width="50" />
+          <h3>Assam Tea</h3>
+          <p>Rich, bold, and malty tea from the Assam region of India.</p>
+        </div>
+        <div class="tea-card">
+          <img src="./assets/tea.svg" height="50" width="50" />
+          <h3>Kashmiri Kahwa</h3>
+          <p>
+            Traditional green tea infused with saffron, almonds, and spices.
+          </p>
+        </div>
+        <div class="tea-card">
+          <img src="./assets/tea-leaf.svg" height="50" width="50" />
+          <h3>Sikkim Tea</h3>
+          <p>Floral and fruity tea from the Temi Tea Garden in Sikkim.</p>
+        </div>
+        <div class="tea-card">
+          <img src="./assets/tea.svg" height="50" width="50" />
+          <h3>Nilgiri Tea</h3>
+          <p>Fragrant and strong tea from the Nilgiri Hills of Tamil Nadu.</p>
+        </div>
+        <div class="tea-card">
+          <img src="./assets/tea-leaf.svg" height="50" width="50" />
+          <h3>Masala Chai</h3>
+          <p>
+            Aromatic tea brewed with spices like cardamom, ginger, and cloves.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
