@@ -1,0 +1,122 @@
+/* Reset and Smooth Scrolling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff0080;
+    transform: scale(1.1);
+}
+
+/* Section Styling */
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    padding: 20px;
+    position: relative;
+}
+
+/* Backgrounds with Beat Animation */
+.home {
+    background: url('https://source.unsplash.com/1600x900/?music,dj') no-repeat center center/cover;
+}
+
+.beats {
+    background: url('https://source.unsplash.com/1600x900/?concert,party') no-repeat center center/cover;
+}
+
+.contact {
+    background: url('https://source.unsplash.com/1600x900/?headphones') no-repeat center center/cover;
+}
+
+/* Overlay for Dark Effect */
+.section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Content Styling */
+.content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+    animation: beat 3s infinite alternate;
+}
+
+h1 span {
+    color: #ff0080;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #ff0080;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: white;
+    color: #ff0080;
+    transform: scale(1.1);
+}
+
+/* Beat Animation */
+@keyframes beat {
+    0% {
+        transform: scale(1);
+        text-shadow: 0 0 10px rgba(255, 0, 128, 0.5);
+    }
+    100% {
+        transform: scale(1.05);
+        text-shadow: 0 0 20px rgba(255, 0, 128, 0.9);
+    }
+}
+
