@@ -8,7 +8,7 @@ class Stack{
     }
 
     pop() {
-        this.stack.pop()
+        this.stack.myPop()
     }
 
     printStack() {
@@ -22,8 +22,12 @@ class Stack{
 
 Array.prototype.myPush = function (data) {
     this[this.length] = data;
-    return this.length;
 }
+
+Array.prototype.myPop = function () {
+    if (this.length === 0) return null;
+    this.length = this.length - 1;
+}  
 
 const stack = new Stack();
 stack.push(20)
