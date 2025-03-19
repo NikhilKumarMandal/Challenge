@@ -1,0 +1,66 @@
+ body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            max-width: 900px;
+            border: 1px solid gray;
+        }
+        .tracker, .calendar {
+            padding: 20px;
+            border-bottom: 1px dotted gray;
+        }
+
+        #calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    margin-top: 20px;
+    max-width: 320px;
+    margin: auto;
+    }
+        .box {
+            border: 1px solid gray;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        h2 {
+            text-align: center;
+        }
+        .mood-options {
+            display: flex;
+            justify-content: space-around;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .timeline {
+            margin-top: 20px;
+        }
+        .timeline-item {
+            padding: 5px;
+            border-bottom: 1px solid gray;
+        }
+        
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+            .tracker {
+                flex: 3;
+                border-right: 1px dotted gray;
+                border-bottom: none;
+            }
+            .calendar {
+                flex: 1;
+            }
+        }
